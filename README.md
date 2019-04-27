@@ -8,14 +8,29 @@ This little script will crawl prismJS github GH repo via Github content API and 
 
 1. Clone this repo
 2. `composer install`
-3. `php ./app/index.php`
+3. `php ./app/index.php --help` 
+
+## Usage
+
+You have 2 options, list the supported languages as `list` _(default)_ or `named` _(key value pair)_.
+
+List: 
+
+```php ./app/index.php list```
+
+Named: 
+
+```php ./app/index.php named```
+ 
 
 ## Example output
 
 _as of 2019/04/27_
 
+List
+
 ```
-Supported languages
+PrismJS Supported languages
 
 abap
 abnf
@@ -196,3 +211,187 @@ xquery
 yaml
 ```
 
+Named
+
+```
+PrismJS Supported languages
+Array
+(
+    [markup] => Markup
+    [css] => CSS
+    [clike] => C-like
+    [javascript] => JavaScript
+    [abap] => ABAP
+    [abnf] => Augmented Backus–Naur form
+    [actionscript] => ActionScript
+    [ada] => Ada
+    [apacheconf] => Apache Configuration
+    [apl] => APL
+    [applescript] => AppleScript
+    [arduino] => Arduino
+    [arff] => ARFF
+    [asciidoc] => AsciiDoc
+    [asm6502] => 6502 Assembly
+    [aspnet] => ASP.NET (C#)
+    [autohotkey] => AutoHotkey
+    [autoit] => AutoIt
+    [bash] => Bash
+    [basic] => BASIC
+    [batch] => Batch
+    [bison] => Bison
+    [bnf] => Backus–Naur form
+    [brainfuck] => Brainfuck
+    [bro] => Bro
+    [c] => C
+    [csharp] => C#
+    [cpp] => C++
+    [cil] => CIL
+    [coffeescript] => CoffeeScript
+    [cmake] => CMake
+    [clojure] => Clojure
+    [crystal] => Crystal
+    [csp] => Content-Security-Policy
+    [css-extras] => CSS Extras
+    [d] => D
+    [dart] => Dart
+    [diff] => Diff
+    [django] => Django/Jinja2
+    [docker] => Docker
+    [ebnf] => Extended Backus–Naur form
+    [eiffel] => Eiffel
+    [ejs] => EJS
+    [elixir] => Elixir
+    [elm] => Elm
+    [erb] => ERB
+    [erlang] => Erlang
+    [fsharp] => F#
+    [flow] => Flow
+    [fortran] => Fortran
+    [gcode] => G-code
+    [gedcom] => GEDCOM
+    [gherkin] => Gherkin
+    [git] => Git
+    [glsl] => GLSL
+    [gml] => GameMaker Language
+    [go] => Go
+    [graphql] => GraphQL
+    [groovy] => Groovy
+    [haml] => Haml
+    [handlebars] => Handlebars
+    [haskell] => Haskell
+    [haxe] => Haxe
+    [hcl] => HCL
+    [http] => HTTP
+    [hpkp] => HTTP Public-Key-Pins
+    [hsts] => HTTP Strict-Transport-Security
+    [ichigojam] => IchigoJam
+    [icon] => Icon
+    [inform7] => Inform 7
+    [ini] => Ini
+    [io] => Io
+    [j] => J
+    [java] => Java
+    [javadoc] => JavaDoc
+    [javadoclike] => JavaDoc-like
+    [javastacktrace] => Java stack trace
+    [jolie] => Jolie
+    [jsdoc] => JSDoc
+    [js-extras] => JS Extras
+    [json] => JSON
+    [jsonp] => JSONP
+    [json5] => JSON5
+    [julia] => Julia
+    [keyman] => Keyman
+    [kotlin] => Kotlin
+    [latex] => LaTeX
+    [less] => Less
+    [liquid] => Liquid
+    [lisp] => Lisp
+    [livescript] => LiveScript
+    [lolcode] => LOLCODE
+    [lua] => Lua
+    [makefile] => Makefile
+    [markdown] => Markdown
+    [markup-templating] => Markup templating
+    [matlab] => MATLAB
+    [mel] => MEL
+    [mizar] => Mizar
+    [monkey] => Monkey
+    [n1ql] => N1QL
+    [n4js] => N4JS
+    [nand2tetris-hdl] => Nand To Tetris HDL
+    [nasm] => NASM
+    [nginx] => nginx
+    [nim] => Nim
+    [nix] => Nix
+    [nsis] => NSIS
+    [objectivec] => Objective-C
+    [ocaml] => OCaml
+    [opencl] => OpenCL
+    [oz] => Oz
+    [parigp] => PARI/GP
+    [parser] => Parser
+    [pascal] => Pascal
+    [perl] => Perl
+    [php] => PHP
+    [phpdoc] => PHPDoc
+    [php-extras] => PHP Extras
+    [plsql] => PL/SQL
+    [powershell] => PowerShell
+    [processing] => Processing
+    [prolog] => Prolog
+    [properties] => .properties
+    [protobuf] => Protocol Buffers
+    [pug] => Pug
+    [puppet] => Puppet
+    [pure] => Pure
+    [python] => Python
+    [q] => Q (kdb+ database)
+    [qore] => Qore
+    [r] => R
+    [jsx] => React JSX
+    [tsx] => React TSX
+    [renpy] => Ren'py
+    [reason] => Reason
+    [regex] => Regex
+    [rest] => reST (reStructuredText)
+    [rip] => Rip
+    [roboconf] => Roboconf
+    [ruby] => Ruby
+    [rust] => Rust
+    [sas] => SAS
+    [sass] => Sass (Sass)
+    [scss] => Sass (Scss)
+    [scala] => Scala
+    [scheme] => Scheme
+    [smalltalk] => Smalltalk
+    [smarty] => Smarty
+    [sql] => SQL
+    [soy] => Soy (Closure Template)
+    [stylus] => Stylus
+    [swift] => Swift
+    [tap] => TAP
+    [tcl] => Tcl
+    [textile] => Textile
+    [toml] => TOML
+    [tt2] => Template Toolkit 2
+    [twig] => Twig
+    [typescript] => TypeScript
+    [t4-cs] => T4 Text Templates (C#)
+    [t4-vb] => T4 Text Templates (VB)
+    [t4-templating] => T4 templating
+    [vala] => Vala
+    [vbnet] => VB.Net
+    [velocity] => Velocity
+    [verilog] => Verilog
+    [vhdl] => VHDL
+    [vim] => vim
+    [visual-basic] => Visual Basic
+    [wasm] => WebAssembly
+    [wiki] => Wiki markup
+    [xeora] => Xeora
+    [xojo] => Xojo (REALbasic)
+    [xquery] => XQuery
+    [yaml] => YAML
+)
+```

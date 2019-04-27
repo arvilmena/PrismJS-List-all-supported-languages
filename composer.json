@@ -8,6 +8,7 @@
     ],
     "require": {
         "ext-json": "*",
-        "fabpot/goutte": "^3.2"
+        "fabpot/goutte": "^3.2",
+        "symfony/console": "^4.2"
     }
 }
