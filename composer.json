@@ -1,0 +1,13 @@
+{
+    "name": "arvil/get-prismjs-supported-languages",
+    "authors": [
+        {
+            "name": "Arvil Mena",
+            "email": "arvilmena@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-json": "*",
+        "fabpot/goutte": "^3.2"
+    }
+}
