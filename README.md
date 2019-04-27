@@ -4,6 +4,12 @@ This aims to get the latest supported languages of PrismJS by crawling its Githu
 
 @see https://github.com/PrismJS/prism/issues/178#issuecomment-27542669
 
+## Notes
+
+* Why not crawl [https://prismjs.com/#languages-list](https://prismjs.com/#languages-list) instead?
+    
+    Probably because, I assume like every library, updating the site documentation to reflect with the actual codebase takes time hence will out date the actual supported languages shipped by the codebase.
+
 ## Install
 
 1. Clone this repo
