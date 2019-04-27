@@ -102,6 +102,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 
         if ( 'named' === $format ) {
             print_r( $named );
+//            echo json_encode( $named );
             return;
         }
 
