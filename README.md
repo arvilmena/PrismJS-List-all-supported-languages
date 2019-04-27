@@ -1,6 +1,6 @@
 # Get all the supported languages of [PrismJS](https://prismjs.com/)
 
-This little script will crawl prismJS github GH repo via Github content API and list all its currently supported languages.
+This aims to get the latest supported languages of PrismJS by crawling its Github Repo and/or its test site.
 
 @see https://github.com/PrismJS/prism/issues/178#issuecomment-27542669
 
